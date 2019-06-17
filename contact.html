@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="new2.js"></script>
+</head> 
+<body>
+    <div class="container">
+      <form name="myform" onsubmit="return validateForm()" action="/action_page.php" method="POST">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Your name.."><br>
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="India">India</option> 
+        </select><br>
+
+        E-mail:<br>
+        <input type="text" name="mail">
+    
+        <label for="subject">Subject</label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+    
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    
+      </form>
+    </div> 
+</body>
+</html>
